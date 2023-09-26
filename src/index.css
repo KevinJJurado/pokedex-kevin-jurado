@@ -1,0 +1,28 @@
+/* --- ROOT --- */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 310px;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  min-width: inherit;
+}
+::-webkit-scrollbar{
+  width: 0.6rem;
+  background-color: hsl(0, 0%, 74%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 17%);
+  border-radius: 0.5rem;
+}

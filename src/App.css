@@ -1,0 +1,54 @@
+/* --- ROOT --- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+:root {
+  /* -- Header -- */
+  --header-height: 5rem;
+
+  /* -- Colors -- */
+  --primary-color: hsl(354, 89%, 48%);
+  --body-color: white;
+  --text-color: #fff;
+  --title-color: black;
+
+  /* -- Fonts and tipography */
+  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Open Sans', sans-serif;
+  --large-font: 3rem;
+  --big-font: 2rem;
+  --medium-font: 1.5rem;
+  --normal-font: 1rem;
+  --small-font: 0.8rem;
+  --tiny-font: 0.75rem;
+
+  /* -- Font Weight -- */
+  --Weight-tiny: 300;
+  --Weight-normal: 400;
+  --Weight-medium: 600;
+  --Weight-bold: 700;
+
+  /* -- Margins and Paddings -- */
+  --sp-0-5: 0.5em;
+  --sp-0-75: 0.75em;
+  --sp-1: 1em;
+  --sp-1-5: 1.5em;
+  --sp-2: 2em;
+  --sp-2-5: 2.5em;
+  --sp-3: 3em;
+  --sp-5: 5em;
+
+  /* -- z-index -- */
+  --z-fixed: 1;
+  --z-modal: 2;
+}
+body {
+  background-color: beige;
+}
+
+/* --- PRINCIPAL --- */
+.principal {
+  width: 100%;
+  min-width: inherit;
+  height: 100vh;
+}
