@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 import Pagination from "../components/PokedexPage/Pagination"
+import { useNavigate } from "react-router-dom"
 
 
 const PokedexPage = () => {
@@ -18,6 +19,8 @@ const PokedexPage = () => {
   
   const inputSearch = useRef()
   const inputMax = useRef()
+
+  const navigate = useNavigate()
 
   const max = 150
   const url = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=${max}`
@@ -60,6 +63,10 @@ const PokedexPage = () => {
     setChangeDark(!changeDark)
   }
 
+  const handleBack = () => {
+    navigate('/')
+  }
+  
   return (
     <div className={`${changeDark ? 'pokedex__dark' : 'pokedex'}`}>
       <div className="pokedex__header">
@@ -70,6 +77,9 @@ const PokedexPage = () => {
         {/* <div className="pokedex__header--tres">
           <div className="pokedex__header--tres-1"></div>
         </div> */}
+      </div>
+      <div className="back__btn">
+        <button onClick={handleBack} className="btnBack"><i className='bx bx-left-arrow-circle bx-flashing' ></i></button>
       </div>
       <div className="darkMode">
         <label className="darkMode__switch">

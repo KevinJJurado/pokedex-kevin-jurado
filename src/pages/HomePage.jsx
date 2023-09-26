@@ -22,7 +22,6 @@ const HomePage = () => {
   }
 
 
-
   return (
     <div className={`${changeDark ? 'home__dark' : 'home'}`}>
       <div className="homePage">

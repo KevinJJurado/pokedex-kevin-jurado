@@ -1,5 +1,5 @@
 
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import { useEffect, useState } from 'react'
 
@@ -11,12 +11,17 @@ const PokedexIdPage = () => {
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`
   const [ pokemon, getPokemon ] = useFetch(url)
 
+  const navigate = useNavigate()
   useEffect(() => {
     getPokemon()
   }, [id])
 
   const handleDark = () => {
     setChangeDark(!changeDark)
+  }
+
+  const handleBack = () => {
+    navigate('/pokedex')
   }
 
   const typeInfo = pokemon?.types[0].type.name
@@ -30,6 +35,9 @@ const PokedexIdPage = () => {
         {/* <div className="pokedex__header--tres">
           <div className="pokedex__header--tres-1"></div>
         </div> */}
+      </div>
+      <div className="back__btn">
+        <button onClick={handleBack} className="btnBack"><i className='bx bx-left-arrow-circle bx-flashing' ></i></button>
       </div>
       <div className="darkMode">
         <label className="darkMode__switch">

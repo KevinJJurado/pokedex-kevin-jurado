@@ -21,7 +21,19 @@
   gap: 2em;
   color: white;
 }
-
+.back__btn {
+  width: 100vw;
+  position: fixed;
+  top: 5.5em;
+  left: 0.5em;
+}
+.btnBack {
+  border: none;
+  font-size: 3em;
+  background-color: transparent;
+  cursor: pointer;
+  color: lightgray;
+}
 
 /* -- header -- */
 .pokedex__header {
