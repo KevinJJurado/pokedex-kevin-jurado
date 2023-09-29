@@ -109,6 +109,4 @@
 .darkMode__homePage {
   width: 100vw;
   position: absolute;
-  display: flex;
-  justify-content: end;
 }

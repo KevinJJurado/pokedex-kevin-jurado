@@ -40,13 +40,7 @@ const HomePage = () => {
         <img className="homePage__footer--img" src="./pokeball.png" alt="" />
         
         <div className="darkMode__homePage">
-          <label className="darkMode__switch">
-            <input type="checkbox" className="darkMode__input" onChange={handleDark} checked={changeDark}/>
-            <div className="darkMode__rail">
-              <span className="darkMode__circle"><i className='bx bxs-moon bx-fade-right darkMode__circle-i'></i></span>
-            </div>
-            <span className="darkMode__indicator"></span>
-          </label>
+          <input type="checkbox" class="l" onChange={handleDark} checked={changeDark}/>
         </div>
       </div>
     </div>

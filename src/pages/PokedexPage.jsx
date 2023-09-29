@@ -82,13 +82,7 @@ const PokedexPage = () => {
         <button onClick={handleBack} className="btnBack"><i className='bx bx-left-arrow-circle bx-flashing' ></i></button>
       </div>
       <div className="darkMode">
-        <label className="darkMode__switch">
-          <input type="checkbox" className="darkMode__input" onChange={handleDark} checked={changeDark}/>
-          <div className="darkMode__rail">
-            <span className="darkMode__circle"><i className='bx bxs-moon bx-fade-right darkMode__circle-i'></i></span>
-          </div>
-          <span className="darkMode__indicator"></span>
-        </label>
+        <input type="checkbox" class="l" onChange={handleDark} checked={changeDark}/>
       </div>
       <div className="pokedex__inputSearch">
         <div className="pokedex__text">
