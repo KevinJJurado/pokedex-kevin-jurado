@@ -161,7 +161,7 @@
 
 @media (max-width: 768px) {
   .pokedexId__card {
-    width: 97%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -214,6 +214,10 @@
   .pokedexId__movs {
     width: 97%;
     padding: 3em;   
+  }
+  .podekexId__movs--name {
+    font-size: 0.8em;
+    width: 7em;
   }
 }
 /* Background header card */

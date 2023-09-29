@@ -250,9 +250,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 2em;
-  padding: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-top: 0;
   padding-top: 0;
 }
@@ -300,6 +298,10 @@
   background-color: hsla(354, 89%, 48%, 0.66);
 }
 @media (max-width: 768px) {
+  .pokedex__inputSearch {
+    width: 23em;
+    margin-left: 1em;
+  }
   .pokedex,
   .pokedex__dark {
     display: flex;
