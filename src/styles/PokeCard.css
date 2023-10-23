@@ -8,7 +8,7 @@
   border: 11px solid black;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.3em;
   cursor: pointer;
   transition: transform 100ms ease;
   margin: 1em;
@@ -42,12 +42,14 @@
   color: #416460;
   font-size: var(--big-font);
   text-transform: capitalize;
+  margin: 0.2em;
 }
 .pokeCard__type {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 0.5em;
+  margin: 0;
 }
 .pokeCard__type--type {
   text-align: center;
