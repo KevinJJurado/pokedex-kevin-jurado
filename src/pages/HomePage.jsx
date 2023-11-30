@@ -40,7 +40,7 @@ const HomePage = () => {
         <img className="homePage__footer--img" src="./pokeball.png" alt="" />
         
         <div className="darkMode__homePage">
-          <input type="checkbox" class="l" onChange={handleDark} checked={changeDark}/>
+          <input type="checkbox" className="l" onChange={handleDark} checked={changeDark}/>
         </div>
       </div>
     </div>

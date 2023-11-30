@@ -21,7 +21,7 @@ const Pagination = ({ productsPerPage, max, currentPage, setCurrentPage}) => {
   } 
   return (
     <nav className="pagination">
-      <a onClick={previusPage} className={`pagination-previous ${currentPage === 1 ? 'is-disable' : ''}`}>Previous</a>
+      <a onClick={previusPage} className={`pagination-previous ${currentPage === 1 ? 'is-disable' : ''}`}><i className='bx bx-chevrons-left' ></i></a>
       <ul className="pagination-list">
         {
           pageNumbers.map(page => (
@@ -33,7 +33,7 @@ const Pagination = ({ productsPerPage, max, currentPage, setCurrentPage}) => {
           ))
         }
       </ul>
-      <a onClick={nextPage} className={`pagination-next ${currentPage >= pageNumbers.length ? 'is-disable' : ''}`}>Next Page</a>
+      <a onClick={nextPage} className={`pagination-next ${currentPage >= pageNumbers.length ? 'is-disable' : ''}`}><i className='bx bx-chevrons-right'></i></a>
     </nav>
   )
 }

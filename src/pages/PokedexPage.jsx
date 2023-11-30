@@ -82,7 +82,7 @@ const PokedexPage = () => {
         <button onClick={handleBack} className="btnBack"><i className='bx bx-left-arrow-circle bx-flashing' ></i></button>
       </div>
       <div className="darkMode">
-        <input type="checkbox" class="l" onChange={handleDark} checked={changeDark}/>
+        <input type="checkbox" className="l" onChange={handleDark} checked={changeDark}/>
       </div>
       <div className="pokedex__inputSearch">
         <div className="pokedex__text">
@@ -118,7 +118,7 @@ const PokedexPage = () => {
         }
       </div>
       <Pagination 
-        productsPerPage={productsPerPage}
+        productsPerPage={50}
         max={max}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
